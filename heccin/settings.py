@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ["*"]
 
 # Settings
 DOMAIN_SUFFIX = os.environ.get("DOMAIN_SUFFIX", ".is.heccin.gay")
+GA_CODE = os.environ.get("GA_CODE", None)
 
 
 # Application definition
@@ -59,6 +60,7 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
+                'apps.core.context_processors.ga_code'
             ],
         },
     },
