@@ -11,6 +11,9 @@ def get_name_from_host(host: str) -> str:
     # Strip domain suffix
     name = name.replace(settings.DOMAIN_SUFFIX, "")
 
+    # Convert spaces
+    name = name.replace("--", " ")
+
     return name.title()
 
 
@@ -19,6 +22,9 @@ def name_to_subdomain(name: str) -> str:
     Takes a name and strips it down to just a valid subdomain.
     """
     name = name.lower()
+
+    # Convert spaces
+    name = name.strip().replace(" ", "--")
 
     # Strip non-alphanumeric or dash
     name = "".join([x for x in name if x.isalpha() or x.isnumeric() or x == "-"])
