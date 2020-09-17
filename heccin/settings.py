@@ -28,6 +28,10 @@ DEBUG = bool(int(os.environ.get("DEBUG", 0)))
 ALLOWED_HOSTS = ["*"]
 
 
+# Settings
+DOMAIN_SUFFIX = os.environ.get("DOMAIN_SUFFIX", ".is.heccin.gay")
+
+
 # Application definition
 
 INSTALLED_APPS = [
