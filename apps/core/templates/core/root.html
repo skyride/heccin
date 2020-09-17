@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>🌈 Pride 🏳️‍🌈</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "core/root.css" %}">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Tell someone they're heccin' gay/valid!</h1>
+      <br />
+
+      <form method="POST">
+      {% csrf_token %}
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+        </div>
+        
+        <button class="pride-rainbow" name="flag" value="">
+          Pride v1
+        </button>
+
+        <button class="pride-rainbow-v2" name="flag" value="v2">
+          Pride v2
+        </button>
+        
+        <button class="pride-rainbow-v3" name="flag" value="v3">
+          Pride v3
+        </button>
+        
+        <button class="pride-trans" name="flag" value="trans">
+          Trans
+        </button>
+        
+        <button class="pride-lesbian-v2" name="flag" value="lesbian">
+          Lesbian
+        </button>
+        
+        <button class="pride-bi" name="flag" value="bi">
+          Bisexual
+        </button>
+        
+        <button class="pride-pan" name="flag" value="pan">
+          Pansexual
+        </button>
+        
+        <button class="pride-ace" name="flag" value="ace">
+          Asexual
+        </button>
+            
+        <button class="pride-nb" name="flag" value="nb">
+          Non-binary
+        </button>
+        
+        <button class="pride-gq" name="flag" value="gq">
+          Genderqueer
+        </button>
+        
+        <button class="pride-inter" name="flag" value="inter">
+          Intersex
+        </button>
+        
+        <button class="pride-polyam" name="flag" value="polyam">
+          Polyamorous
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
