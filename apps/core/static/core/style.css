@@ -158,11 +158,7 @@ h1 {
       #1437A2 60%, 
       #1437A2 100% 
     );
-    animation: pride_reverse 0.5s ease forwards;
-  }
-  
-  .pride-bi:hover {
-    animation: pride 0.75s ease forwards; 
+    animation: pride 1.4s ease forwards;
   }
   
   /* ------------------------------------------ */
@@ -176,11 +172,7 @@ h1 {
       #FFDA00 66.666%, 
       #05AEFF 66.666%
     );
-    animation: pride_reverse 0.5s ease forwards;
-  }
-  
-  .pride-pan:hover {
-    animation: pride 0.75s ease forwards; 
+    animation: pride 1.4s ease forwards;
   }
   
   /* ------------------------------------------ */
@@ -196,11 +188,7 @@ h1 {
       #fcfcfc 75%,
       #810082 75%
     );
-    animation: pride_reverse 0.5s ease forwards;
-  }
-  
-  .pride-ace:hover {
-    animation: pride 0.75s ease forwards; 
+    animation: pride 1.4s ease forwards;
   }
   
   /* ------------------------------------------ */
@@ -230,11 +218,7 @@ h1 {
       #fcfcfc 66.666%, 
       #4A8123 66.666%
     );
-    animation: pride_reverse 0.5s ease forwards;
-  }
-  
-  .pride-gq:hover {
-    animation: pride 0.75s ease forwards; 
+    animation: pride 1.4s ease forwards;
   }
   
   /* ------------------------------------------ */
@@ -250,11 +234,7 @@ h1 {
     );
     background-repeat: no-repeat;
     background-position: center;
-    animation: pride_reverse 0.5s ease forwards;
-  }
-  
-  .pride-inter:hover {
-    animation: pride  0.75s ease forwards; 
+    animation: pride 1.4s ease forwards;
   }
   
   /* ------------------------------------------ */
@@ -268,42 +248,7 @@ h1 {
       #FF0000 66.666%, 
       #000000 66.666%
     );
-    animation: pride_reverse 0.5s ease forwards;
-  }
-  
-  .pride-polyam:hover {
-    animation: pride 0.75s ease forwards; 
-  }
-  
-  /* ------------------------------------------ */
-  /* ------------------------------------------ */
-  
-  .pride-bdsm {
-    background: linear-gradient(
-      124deg, 
-      #000000 11.111%,
-      #18186B 11.111%,
-      #18186B 22.222%,
-      #000000 22.222%,
-      #000000 33.333%,
-      #18186B 33.333%,
-      #18186B 44.444%,
-      #ffffff 44.444%,
-      #ffffff 55.555%,
-      #18186B 55.555%,
-      #18186B 66.666%,
-      #000000 66.666%,
-      #000000 77.777%,
-      #18186B 77.777%,
-      #18186B 88.888%,
-      #000000 88.888%,
-      #000000 99.999%
-    );
-    animation: pride_reverse 0.5s ease forwards;
-  }
-  
-  .pride-bdsm:hover {
-    animation: pride 0.75s ease forwards; 
+    animation: pride 1.4s ease forwards;
   }
   
   /* ------------------------------------------ */
