@@ -39,4 +39,4 @@ class UtilTests(SimpleTestCase):
         assert name_to_subdomain("BOB  ") == "bob"
 
         # Test with dashes
-        assert name_to_subdomain("J-Flinn") == "j-flinn"
+        assert name_to_subdomain("J-Flinn Last") == "j-flinn--last"
