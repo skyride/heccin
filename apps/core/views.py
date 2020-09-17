@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.http import Http404
 from django.http.request import HttpRequest
 from django.shortcuts import render
@@ -20,7 +21,19 @@ FLAG_STYLE_MAP = {
 }
 
 
+def root_view(request: HttpRequest):
+    """
+    Displays a box a user can type a name into that performs a redirect.
+    """
+    # Redirect if this is a domain suffix request
+    if settings.DOMAIN_SUFFIX in request.get_host():
+        return name_view(request)
+
+
 def name_view(request: HttpRequest, flag: str = "pride"):
+    """
+    Shows the valid/gay name with the flag!
+    """
     # Check the flag is valid
     if flag not in FLAG_STYLE_MAP:
         raise Http404("We don't know that flag :(")
