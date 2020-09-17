@@ -7,6 +7,7 @@ from .utils import get_name_from_host
 
 FLAG_STYLE_MAP = {
     "pride": "pride-rainbow",
+    "v2": "pride-rainbow-v2",
     "nb": "pride-nb",
     "lesbian": "pride-lesbian-v2",
     "trans": "pride-trans",
@@ -25,7 +26,7 @@ def name_view(request: HttpRequest, flag: str = "pride"):
         raise Http404("We don't know that flag :(")
 
     name = get_name_from_host(request.get_host())    
-    state = "gay" if flag in ["pride", "lesbian", "bi", "pan"] else "valid"
+    state = "gay" if flag in ["pride", "v2", "lesbian", "bi", "pan"] else "valid"
 
     return render(
         request,
