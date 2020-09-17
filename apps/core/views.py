@@ -40,7 +40,7 @@ def root_view(request: HttpRequest):
     # Let's do a redirect.
     subdomain = name_to_subdomain(request.POST['name'])
     path = f"/{request.POST['flag']}" if request.POST['flag'] else ""
-    return redirect(f"http://{subdomain}{settings.DOMAIN_SUFFIX}{path}")
+    return redirect(f"https://{subdomain}{settings.DOMAIN_SUFFIX}{path}")
 
 
 def name_view(request: HttpRequest, flag: str = "pride"):
