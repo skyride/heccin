@@ -8,4 +8,5 @@ def name_view(request: HttpRequest):
         "core/name.html",
         context={
             "name": "Amy",
-            "state": "valid"})
+            "state": "gay",
+            "style": "pride-rainbow"})
