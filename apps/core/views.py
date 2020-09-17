@@ -1,3 +1,6 @@
+from django.http.request import HttpRequest
 from django.shortcuts import render
 
-# Create your views here.
+
+def name_view(request: HttpRequest):
+    return render(request, "core/index.html")
