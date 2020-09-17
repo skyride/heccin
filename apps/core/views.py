@@ -1,16 +1,16 @@
 from django.http.request import HttpRequest
-from django.conf import settings
 from django.shortcuts import render
+
+from .utils import get_name_from_host
 
 
 def name_view(request: HttpRequest):
-    suffix = settings.DOMAIN_SUFFIX
-    subdomain = request.get_host().split(":")[0].replace(suffix, "")
+    name = get_name_from_host(request.get_host())
 
     return render(
         request,
         "core/name.html",
         context={
-            "name": subdomain.title(),
+            "name": name,
             "state": "gay",
             "style": "pride-rainbow"})
