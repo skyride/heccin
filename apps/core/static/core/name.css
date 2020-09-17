@@ -1,26 +1,51 @@
 /* ------------------------------------------ */
 /* ------------------------------------------ */
 
+
+@font-face {
+  font-family: 'gilbert-bold';
+  src: url('gilbert.woff2') format('woff2'),
+       url('gilbert.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 body {
-    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-    margin: 2em;
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
 }
 
 .content {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: auto;
-    background: lime; /* Just to visualize the extent */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
 }
 
 h1 {
-    margin-top: 10%;
-    color: #FFFFFF;
-    -webkit-text-stroke: 1px #010101;
-    font-size: 6em;
+  margin-top: 10%;
+  color: #FFFFFF;
+  -webkit-text-stroke: 0.015em #010101;
+  font-size: 6em;
+}
+
+h3 {
+  position: absolute;
+  width: 100%;
+  bottom: 1em;
+  color: #FFFFFF;
+  font-size: 1.25em;
+}
+
+h3 .stroke {
+  -webkit-text-stroke: 0.03em #010101;
+}
+
+h3 a {
+  color: #FFFFFF;
 }
 
 .pride-rainbow {

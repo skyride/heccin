@@ -1,7 +1,16 @@
 /* CSS files add styling rules to your content */
 
+@font-face {
+  font-family: 'gilbert-color-bold-preview5';
+  src: url('gilbert.woff2') format('woff2'),
+       url('gilbert.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 body {
-    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-family: "Helvetica Neue", helvetica, arial, sans-serif;
     margin: 2em;
   }
   
