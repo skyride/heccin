@@ -33,7 +33,11 @@ def root_view(request: HttpRequest):
     if request.method != "POST":
         return render(request, "core/root.html")
 
-    # It's a post! Let's do a redirect.
+    # Check we have a name
+    if not request.POST['name']:
+        return redirect(request.get_full_path())
+
+    # Let's do a redirect.
     subdomain = name_to_subdomain(request.POST['name'])
     path = f"/{request.POST['flag']}" if request.POST['flag'] else ""
     return redirect(f"http://{subdomain}{settings.DOMAIN_SUFFIX}{path}")

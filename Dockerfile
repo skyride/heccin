@@ -18,5 +18,6 @@ RUN ./manage.py collectstatic --noinput
 # Ops Parameters
 ENV WORKERS=2
 ENV PORT=8000
+ENV PYTHONUNBUFFERED=1
 
 CMD uwsgi --http :${PORT} --processes ${WORKERS} --static-map /static=/static --module heccin.wsgi:application
